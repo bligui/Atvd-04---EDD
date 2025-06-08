@@ -1,18 +1,5 @@
-## Getting Started
+Sistema de Monitoramento de Qualidade do Ar em Regiões de Risco Em resposta ao agravamento dos desastres ambientais — como queimadas, poluição industrial e mudanças climáticas — uma organização ambiental está desenvolvendo um sistema de monitoramento da qualidade do ar em diferentes regiões do país. O objetivo é detectar níveis perigosos de poluentes que afetam diretamente a saúde da população e auxiliar na tomada de decisões emergenciais. No entanto, nem todas as regiões possuem sensores ativos para a coleta de dados. Por isso, o sistema deverá distinguir entre regiões monitoradas (com sensores) e regiões não monitoradas (sem sensores).
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+As regiões monitoradas são equipadas com sensores de qualidade do ar que registram diariamente o índice AQI (Air Quality Index), com valores que variam de 0 a 500. A cada dia, um sensor é responsável por uma medição contendo: o ID do sensor, a data da coleta e o valor do AQI. Ao final da semana (você define a quantidade de dias para testar), o sistema calcula a média dos valores registrados na semana. Com base nessa média semanal, o sistema classifica o nível de emergência da região monitorada. As regiões não monitoradas ainda fazem parte da base de dados, mas não possuem sensores instalados. Para essas, o sistema deve apenas informar: Zona sem sensores instalados. Monitoramento indireto via satélite.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+A equipe de engenharia de software da sua empresa elaborou o diagrama de classes da aplicação. A codificação das classes deve seguir as boas práticas de engenharia de software e os princípios de orientação a objetos: todos os atributos devem ser private, e todas as classes devem conter métodos construtores para inicialização de seus atributos.
